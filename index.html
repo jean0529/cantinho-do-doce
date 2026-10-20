@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6b193d">
+<meta name="description" content="Cantinho do Doce — brigadeiros, doces finos e caixas degustação artesanais. Faça sua encomenda pelo WhatsApp.">
+<title>Cantinho do Doce | Cardápio</title>
+<style>
+:root{--wine:#6b193d;--pink:#efb6cc;--pink2:#f8e4ec;--cream:#fffaf7;--ink:#2e2027;--muted:#76666d;--white:#fff;--gold:#c99a58;--line:#f0dce4;--shadow:0 14px 36px rgba(83,28,54,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+a{color:inherit}button,input,select{font:inherit}button{cursor:pointer}.topbar{background:var(--wine);color:#fff;text-align:center;padding:9px 16px;font-size:.85rem;letter-spacing:.02em}
+header{background:linear-gradient(135deg,#fffaf7 0%,#f9e6ed 100%);padding:26px 20px 44px;overflow:hidden;position:relative}
+.nav{max-width:1120px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-weight:850;letter-spacing:-.04em;font-size:1.12rem;color:var(--wine);display:flex;align-items:center;gap:10px}.brand-mark{display:grid;place-items:center;background:var(--wine);color:#fff;border-radius:14px;width:42px;height:42px;font-size:1.35rem;box-shadow:0 8px 18px #6b193d30}.nav a{text-decoration:none;font-weight:700;font-size:.9rem;color:var(--wine)}
+.hero{max-width:1120px;margin:44px auto 0;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.17em;font-weight:800;font-size:.75rem;color:var(--wine)}h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:.99;letter-spacing:-.065em;margin:12px 0 20px;color:var(--wine)}.hero p{max-width:570px;color:#634d58;font-size:1.08rem;margin:0 0 24px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:13px 19px;border:0;border-radius:999px;background:var(--wine);color:white;text-decoration:none;font-weight:800;box-shadow:0 8px 20px #6b193d26}.btn.secondary{background:#fff;color:var(--wine);border:1px solid var(--line);box-shadow:none}.hero-art{min-height:290px;display:grid;place-items:center;position:relative}.sweet-circle{width:min(330px,75vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 25%,#fff 0 10%,#f7dce7 11% 48%,#e7a9c1 49% 68%,#d88eae 69%);display:grid;place-items:center;box-shadow:inset -12px -16px 30px #a84b7540,0 25px 45px #6b193d20;transform:rotate(-8deg)}.sweet-circle span{font-size:clamp(6rem,15vw,9rem);filter:drop-shadow(0 12px 8px #6b193d25);transform:rotate(8deg)}.floating{position:absolute;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 16px;box-shadow:var(--shadow);font-weight:800;color:var(--wine)}.floating.one{top:22px;left:0;transform:rotate(-5deg)}.floating.two{bottom:20px;right:0;transform:rotate(4deg)}
+main{max-width:1120px;margin:auto;padding:0 20px 70px}.notice{margin:-18px auto 42px;position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 22px;display:flex;gap:14px;align-items:flex-start;box-shadow:var(--shadow)}.notice-icon{font-size:1.5rem}.notice strong{color:var(--wine)}.notice p{margin:3px 0 0;color:var(--muted);font-size:.92rem}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin:38px 0 18px}.section-head h2{margin:0;color:var(--wine);font-size:clamp(1.6rem,4vw,2.2rem);letter-spacing:-.04em}.section-head p{margin:4px 0 0;color:var(--muted)}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}.search{flex:1;min-width:210px;border:1px solid var(--line);border-radius:13px;background:white;padding:12px 15px;outline-color:var(--pink)}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:white;color:var(--wine);padding:10px 14px;border-radius:999px;font-size:.86rem;font-weight:750}.filter.active,.filter:hover{background:var(--wine);border-color:var(--wine);color:white}
+.category{margin:30px 0 42px;scroll-margin-top:20px}.category-title{display:flex;align-items:center;gap:12px;margin-bottom:16px}.category-title .emoji{width:48px;height:48px;display:grid;place-items:center;background:var(--pink2);border-radius:15px;font-size:1.5rem}.category-title h3{margin:0;color:var(--wine);font-size:1.35rem}.category-title p{margin:2px 0 0;color:var(--muted);font-size:.9rem}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.product-photo{width:100%;height:130px;object-fit:cover;border-radius:12px;margin:0 0 13px;background:#f8e4ec}.product{background:white;border:1px solid var(--line);border-radius:18px;padding:17px;display:flex;flex-direction:column;min-height:190px;box-shadow:0 5px 20px #6b193d08;transition:transform .18s,box-shadow .18s}.product:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.product-top{display:flex;justify-content:space-between;gap:10px;align-items:start}.product h4{margin:0;color:#3b2631;font-size:1.02rem}.product .desc{font-size:.87rem;color:var(--muted);margin:8px 0 15px}.price{font-weight:850;color:var(--wine);font-size:1.03rem;white-space:nowrap}.product-bottom{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px}.small-btn{border:0;border-radius:999px;padding:9px 13px;background:var(--pink2);color:var(--wine);font-weight:800;font-size:.85rem}.small-btn:hover{background:var(--pink)}.custom-note{border-radius:14px;background:#fff6df;border:1px solid #f0dfb4;padding:15px 17px;font-size:.9rem;color:#604c2d;margin-top:16px}.box-degust{display:grid;grid-template-columns:220px 1fr auto;gap:20px;align-items:center;background:linear-gradient(135deg,#6b193d,#8c3158);color:white;border-radius:22px;padding:25px}.box-degust h3{font-size:1.5rem;margin:0 0 7px}.box-degust p{margin:0;color:#f8e4ec;max-width:650px}.box-degust .price{color:white;font-size:1.5rem}.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}.info{background:white;border:1px solid var(--line);border-radius:16px;padding:18px}.info .ico{font-size:1.5rem}.info h4{margin:8px 0 5px;color:var(--wine)}.info p{margin:0;font-size:.9rem;color:var(--muted)}
+footer{background:#321321;color:#fff;padding:35px 20px}.footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:22px;align-items:center;flex-wrap:wrap}.footer-inner h2{margin:0 0 5px}.footer-inner p{margin:0;color:#e7cdd8}.footer-inner a{color:#fff}
+.cart-fab{position:fixed;right:20px;bottom:20px;z-index:5;background:var(--wine);color:white;border:0;border-radius:999px;padding:14px 19px;font-weight:850;box-shadow:0 12px 30px #35102255;display:flex;gap:10px;align-items:center}.count{display:grid;place-items:center;background:#fff;color:var(--wine);border-radius:50%;width:25px;height:25px;font-size:.82rem}
+.modal-backdrop{position:fixed;inset:0;background:#17081199;z-index:10;display:none;align-items:flex-end;justify-content:center;padding:16px}.modal-backdrop.open{display:flex}.modal{width:min(650px,100%);max-height:90vh;overflow:auto;background:var(--cream);border-radius:22px;padding:22px;box-shadow:0 20px 60px #0004}.modal-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.modal h2{color:var(--wine);margin:0}.close{border:0;background:var(--pink2);color:var(--wine);border-radius:50%;width:38px;height:38px;font-size:1.3rem}.cart-list{display:grid;gap:10px;margin:18px 0}.cart-row{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;background:white;border:1px solid var(--line);border-radius:12px;padding:12px}.qty{display:flex;align-items:center;gap:9px}.qty button{border:0;border-radius:50%;width:28px;height:28px;background:var(--pink2);color:var(--wine);font-weight:900}.remove{border:0;background:transparent;color:#a12d4d}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:grid;gap:5px;margin:12px 0}.field label{font-weight:750;font-size:.9rem;color:var(--wine)}.field input,.field select,.field textarea{border:1px solid var(--line);border-radius:11px;padding:11px;background:white;min-width:0}.total{display:flex;justify-content:space-between;font-size:1.1rem;font-weight:850;border-top:1px solid var(--line);padding-top:15px}.empty{text-align:center;padding:24px;color:var(--muted)}
+@media(max-width:760px){.box-degust{grid-template-columns:1fr}.hero{grid-template-columns:1fr;gap:8px;margin-top:34px}.hero-art{min-height:230px}.sweet-circle{width:220px}.floating.one{left:5%}.floating.two{right:4%}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.info-grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.box-degust{grid-template-columns:1fr}.box-degust .price{font-size:1.35rem}.notice{margin-bottom:30px}.nav a{font-size:.82rem}}
+@media(max-width:460px){header{padding-left:16px;padding-right:16px}.nav{align-items:flex-start}.nav a{max-width:130px;text-align:right}.grid{grid-template-columns:1fr}.product{min-height:unset}.product-bottom{margin-top:8px}.form-row{grid-template-columns:1fr}.cart-fab{right:12px;bottom:12px}.modal-backdrop{padding:0}.modal{border-radius:22px 22px 0 0;max-height:92vh}}
+</style>
+</head>
+<body>
+<div class="topbar">Doces artesanais feitos com carinho • Encomendas com antecedência</div>
+<header>
+  <nav class="nav">
+    <div class="brand"><span class="brand-mark">🍬</span><span>CANTINHO<br>DO DOCE</span></div>
+    <a href="#cardapio">Ver cardápio ↓</a>
+  </nav>
+  <div class="hero">
+    <div>
+      <div class="eyebrow">Um carinho em forma de doce</div>
+      <h1>Pequenos doces,<br>grandes momentos.</h1>
+      <p>Brigadeiros, doces finos e opções especiais para deixar sua comemoração ainda mais gostosa. Escolha seus favoritos e faça sua encomenda.</p>
+      <a class="btn" href="#cardapio">🍓 Explorar cardápio</a>
+      <a class="btn secondary" href="#encomendas" style="margin-left:7px">Como encomendar</a>
+    </div>
+    <div class="hero-art" aria-label="Ilustração de doce">
+      <div class="sweet-circle"><span>🧁</span></div>
+      <div class="floating one">Feito artesanalmente ✨</div>
+      <div class="floating two">💕 Momentos especiais</div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="notice">
+    <div class="notice-icon">📅</div>
+    <div><strong>Planeje sua encomenda!</strong><p>Solicite com no mínimo 5 dias de antecedência, conforme disponibilidade de datas. A confirmação depende do pagamento de 50% ou 100% do valor total.</p></div>
+  </div>
+  <section id="cardapio">
+    <div class="section-head"><div><div class="eyebrow">Escolha seus favoritos</div><h2>Nosso cardápio</h2><p>Consulte os sabores e selecione os itens para sua encomenda.</p></div></div>
+    <div class="tools">
+      <input class="search" id="search" type="search" placeholder="🔎 Buscar um doce ou sabor..." aria-label="Buscar produtos">
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="tradicional">Tradicionais</button>
+        <button class="filter" data-filter="gourmet">Gourmet</button>
+        <button class="filter" data-filter="especial">Especiais</button>
+        <button class="filter" data-filter="personalizado">Personalizados</button>
+        <button class="filter" data-filter="finos">Doces finos</button>
+      </div>
+    </div>
+    <div id="products">
+      <section class="category" data-category="tradicional">
+        <div class="category-title"><span class="emoji">🍫</span><div><h3>Brigadeiros tradicionais</h3><p>Pedido mínimo de 25 unidades por sabor</p></div></div>
+        <div class="grid">
+          <article class="product" data-search="ninho brigadeiro tradicional"><img class="product-photo" src="images/tradicional.jpg" alt="Exemplo de Ninho — brigadeiro tradicional" loading="lazy"><div class="product-top"><h4>Ninho</h4></div><p class="desc">Brigadeiro tradicional sabor Ninho.</p><div class="product-bottom"><span class="price">R$ 65 / 50 un.</span><button class="small-btn" data-add="Ninho — brigadeiro tradicional" data-price="65" data-unit="50 unidades">Adicionar</button></div></article>
+          <article class="product" data-search="brigadeiro tradicional chocolate"><img class="product-photo" src="images/tradicional.jpg" alt="Exemplo de Brigadeiro tradicional" loading="lazy"><div class="product-top"><h4>Brigadeiro</h4></div><p class="desc">O sabor clássico de brigadeiro.</p><div class="product-bottom"><span class="price">R$ 65 / 50 un.</span><button class="small-btn" data-add="Brigadeiro tradicional" data-price="65" data-unit="50 unidades">Adicionar</button></div></article>
+          <article class="product" data-search="beijinho coco tradicional"><img class="product-photo" src="images/tradicional.jpg" alt="Exemplo de Beijinho" loading="lazy"><div class="product-top"><h4>Beijinho</h4></div><p class="desc">Doce tradicional de coco.</p><div class="product-bottom"><span class="price">R$ 65 / 50 un.</span><button class="small-btn" data-add="Beijinho" data-price="65" data-unit="50 unidades">Adicionar</button></div></article>
+          <article class="product" data-search="dois amores tradicional"><img class="product-photo" src="images/tradicional.jpg" alt="Exemplo de Dois amores" loading="lazy"><div class="product-top"><h4>Dois amores</h4></div><p class="desc">Combinação de dois sabores clássicos.</p><div class="product-bottom"><span class="price">R$ 65 / 50 un.</span><button class="small-btn" data-add="Dois amores" data-price="65" data-unit="50 unidades">Adicionar</button></div></article>
+          <article class="product" data-search="cajuzinho tradicional"><img class="product-photo" src="images/tradicional.jpg" alt="Exemplo de Cajuzinho" loading="lazy"><div class="product-top"><h4>Cajuzinho</h4></div><p class="desc">Doce tradicional de festa.</p><div class="product-bottom"><span class="price">R$ 65 / 50 un.</span><button class="small-btn" data-add="Cajuzinho" data-price="65" data-unit="50 unidades">Adicionar</button></div></article>
+        </div>
+        <div class="custom-note">📦 Meio cento (50 unidades): <strong>R$ 65,00</strong> • Cento (100 unidades): <strong>R$ 100,00</strong>. Pedido mínimo: 25 unidades por sabor.</div>
+      </section>
+      <section class="category" data-category="gourmet">
+        <div class="category-title"><span class="emoji">✨</span><div><h3>Brigadeiros gourmet</h3><p>Pedido mínimo de 25 unidades por sabor</p></div></div>
+        <div class="grid">
+          <article class="product" data-search="ninho nutella gourmet"><img class="product-photo" src="images/gourmet.jpg" alt="Exemplo de Ninho com Nutella — gourmet" loading="lazy"><div class="product-top"><h4>Ninho com Nutella</h4></div><p class="desc">Combinação de Ninho com creme de avelã.</p><div class="product-bottom"><span class="price">R$ 85 / 50 un.</span><button class="small-btn" data-add="Ninho com Nutella — gourmet" data-price="85" data-unit="50 unidades">Adicionar</button></div></article>
+          <article class="product" data-search="ferrero gourmet"><img class="product-photo" src="images/gourmet.jpg" alt="Exemplo de Ferrero — gourmet" loading="lazy"><div class="product-top"><h4>Ferrero</h4></div><p class="desc">Sabor inspirado no clássico Ferrero.</p><div class="product-bottom"><span class="price">R$ 85 / 50 un.</span><button class="small-btn" data-add="Ferrero — gourmet" data-price="85" data-unit="50 unidades">Adicionar</button></div></article>
+          <article class="product" data-search="confete gourmet"><img class="product-photo" src="images/gourmet.jpg" alt="Exemplo de Confete — gourmet" loading="lazy"><div class="product-top"><h4>Confete</h4></div><p class="desc">Brigadeiro com confetes coloridos.</p><div class="product-bottom"><span class="price">R$ 85 / 50 un.</span><button class="small-btn" data-add="Confete — gourmet" data-price="85" data-unit="50 unidades">Adicionar</button></div></article>
+          <article class="product" data-search="doce de leite gourmet"><img class="product-photo" src="images/gourmet.jpg" alt="Exemplo de Doce de leite — gourmet" loading="lazy"><div class="product-top"><h4>Doce de leite</h4></div><p class="desc">Sabor doce de leite.</p><div class="product-bottom"><span class="price">R$ 85 / 50 un.</span><button class="small-btn" data-add="Doce de leite — gourmet" data-price="85" data-unit="50 unidades">Adicionar</button></div></article>
+          <article class="product" data-search="surpresa de uva gourmet"><img class="product-photo" src="images/gourmet.jpg" alt="Exemplo de Surpresa de uva — gourmet" loading="lazy"><div class="product-top"><h4>Surpresa de uva</h4></div><p class="desc">Doce com surpresa de uva.</p><div class="product-bottom"><span class="price">R$ 85 / 50 un.</span><button class="small-btn" data-add="Surpresa de uva — gourmet" data-price="85" data-unit="50 unidades">Adicionar</button></div></article>
+          <article class="product" data-search="coco queimado gourmet"><img class="product-photo" src="images/gourmet.jpg" alt="Exemplo de Coco queimado — gourmet" loading="lazy"><div class="product-top"><h4>Coco queimado</h4></div><p class="desc">Brigadeiro com sabor de coco queimado.</p><div class="product-bottom"><span class="price">R$ 85 / 50 un.</span><button class="small-btn" data-add="Coco queimado — gourmet" data-price="85" data-unit="50 unidades">Adicionar</button></div></article>
+        </div>
+        <div class="custom-note">📦 Meio cento (50 unidades): <strong>R$ 85,00</strong> • Cento (100 unidades): <strong>R$ 165,00</strong>. Pedido mínimo: 25 unidades por sabor.</div>
+      </section>
+      <section class="category" data-category="especial">
+        <div class="category-title"><span class="emoji">💝</span><div><h3>Brigadeiros especiais</h3><p>Pedido mínimo de 25 unidades por sabor</p></div></div>
+        <div class="grid">
+          <article class="product" data-search="kinder bueno especial"><img class="product-photo" src="images/especial.jpg" alt="Exemplo de Kinder Bueno — especial" loading="lazy"><div class="product-top"><h4>Kinder Bueno</h4></div><p class="desc">Brigadeiro especial.</p><div class="product-bottom"><span class="price">R$ 95 / 50 un.</span><button class="small-btn" data-add="Kinder Bueno — especial" data-price="95" data-unit="50 unidades">Adicionar</button></div></article>
+          <article class="product" data-search="pudim especial"><img class="product-photo" src="images/especial.jpg" alt="Exemplo de Pudim — especial" loading="lazy"><div class="product-top"><h4>Pudim</h4></div><p class="desc">Sabor inspirado em pudim.</p><div class="product-bottom"><span class="price">R$ 95 / 50 un.</span><button class="small-btn" data-add="Pudim — especial" data-price="95" data-unit="50 unidades">Adicionar</button></div></article>
+          <article class="product" data-search="prestigio especial coco chocolate"><img class="product-photo" src="images/especial.jpg" alt="Exemplo de Prestígio — especial" loading="lazy"><div class="product-top"><h4>Prestígio</h4></div><p class="desc">Combinação de coco e chocolate.</p><div class="product-bottom"><span class="price">R$ 95 / 50 un.</span><button class="small-btn" data-add="Prestígio — especial" data-price="95" data-unit="50 unidades">Adicionar</button></div></article>
+          <article class="product" data-search="floresta negra especial"><img class="product-photo" src="images/especial.jpg" alt="Exemplo de Floresta negra — especial" loading="lazy"><div class="product-top"><h4>Floresta negra</h4></div><p class="desc">Brigadeiro especial.</p><div class="product-bottom"><span class="price">R$ 95 / 50 un.</span><button class="small-btn" data-add="Floresta negra — especial" data-price="95" data-unit="50 unidades">Adicionar</button></div></article>
+          <article class="product" data-search="ninho morango especial"><img class="product-photo" src="images/especial.jpg" alt="Exemplo de Ninho com morango — especial" loading="lazy"><div class="product-top"><h4>Ninho com morango</h4></div><p class="desc">Combinação de Ninho e morango.</p><div class="product-bottom"><span class="price">R$ 95 / 50 un.</span><button class="small-btn" data-add="Ninho com morango — especial" data-price="95" data-unit="50 unidades">Adicionar</button></div></article>
+        </div>
+        <div class="custom-note">📦 Meio cento (50 unidades): <strong>R$ 95,00</strong> • Cento (100 unidades): <strong>R$ 180,00</strong>. Pedido mínimo: 25 unidades por sabor.</div>
+      </section>
+      <section class="category" data-category="personalizado">
+        <div class="category-title"><span class="emoji">🌟</span><div><h3>Brigadeiros personalizados</h3><p>Sabor Leite Ninho com acabamento especial</p></div></div>
+        <div class="grid">
+          <article class="product" data-search="leite ninho metalizado glitter pasta americana personalizado"><img class="product-photo" src="images/personalizado.jpg" alt="Exemplo de Leite Ninho — personalizado" loading="lazy"><div class="product-top"><h4>Leite Ninho personalizado</h4></div><p class="desc">Pode incluir efeito metalizado, glitter e aplique de pasta americana.</p><div class="product-bottom"><span class="price">R$ 100 / 50 un.</span><button class="small-btn" data-add="Leite Ninho — personalizado" data-price="100" data-unit="50 unidades">Adicionar</button></div></article>
+        </div>
+        <div class="custom-note">📦 Meio cento (50 unidades): <strong>R$ 100,00</strong> • Cento (100 unidades): <strong>R$ 180,00</strong>. A personalização com efeito metalizado, glitter e aplique de pasta americana tem acréscimo de <strong>R$ 0,50 por doce</strong>. Pedido mínimo: 25 unidades por sabor.</div>
+      </section>
+      <section class="category" data-category="finos">
+        <div class="category-title"><span class="emoji">🌸</span><div><h3>Doces finos</h3><p>Opções delicadas para comemorações</p></div></div>
+        <div class="grid">
+          <article class="product" data-search="piramide frutas vermelhas doce fino"><img class="product-photo" src="images/finos_a.jpg" alt="Exemplo de Pirâmide — frutas vermelhas" loading="lazy"><div class="product-top"><h4>Pirâmide</h4><span class="price">R$ 3,20</span></div><p class="desc">Sabor: frutas vermelhas • preço por unidade.</p><div class="product-bottom"><span></span><button class="small-btn" data-add="Pirâmide — frutas vermelhas" data-price="3.20" data-unit="unidade">Adicionar</button></div></article>
+          <article class="product" data-search="elegance ninho nutella doce fino"><img class="product-photo" src="images/finos_a.jpg" alt="Exemplo de Elegance — Ninho com Nutella" loading="lazy"><div class="product-top"><h4>Elegance</h4><span class="price">R$ 3,20</span></div><p class="desc">Sabor: Ninho com Nutella • preço por unidade.</p><div class="product-bottom"><span></span><button class="small-btn" data-add="Elegance — Ninho com Nutella" data-price="3.20" data-unit="unidade">Adicionar</button></div></article>
+          <article class="product" data-search="flor sakura meio amargo doce fino"><img class="product-photo" src="images/finos_a.jpg" alt="Exemplo de Flor Sakura — meio amargo" loading="lazy"><div class="product-top"><h4>Flor Sakura</h4><span class="price">R$ 2,90</span></div><p class="desc">Sabor: meio amargo • preço por unidade.</p><div class="product-bottom"><span></span><button class="small-btn" data-add="Flor Sakura — meio amargo" data-price="2.90" data-unit="unidade">Adicionar</button></div></article>
+          <article class="product" data-search="mini bolinho maracuja doce fino"><img class="product-photo" src="images/finos_a.jpg" alt="Exemplo de Mini bolinho — maracujá" loading="lazy"><div class="product-top"><h4>Mini bolinho</h4><span class="price">R$ 3,20</span></div><p class="desc">Sabor: maracujá • preço por unidade.</p><div class="product-bottom"><span></span><button class="small-btn" data-add="Mini bolinho — maracujá" data-price="3.20" data-unit="unidade">Adicionar</button></div></article>
+          <article class="product" data-search="mini coracao brigadeiro cereja doce fino"><img class="product-photo" src="images/finos_b.jpg" alt="Exemplo de Mini coração — brigadeiro com cereja" loading="lazy"><div class="product-top"><h4>Mini coração</h4><span class="price">R$ 2,90</span></div><p class="desc">Sabor: brigadeiro com cereja • preço por unidade.</p><div class="product-bottom"><span></span><button class="small-btn" data-add="Mini coração — brigadeiro com cereja" data-price="2.90" data-unit="unidade">Adicionar</button></div></article>
+          <article class="product" data-search="morango ninho chocolate doce fino"><img class="product-photo" src="images/finos_b.jpg" alt="Exemplo de Morango — Ninho com morango e chocolate" loading="lazy"><div class="product-top"><h4>Morango</h4><span class="price">R$ 3,20</span></div><p class="desc">Sabor: Ninho com morango e chocolate • preço por unidade.</p><div class="product-bottom"><span></span><button class="small-btn" data-add="Morango — Ninho com morango e chocolate" data-price="3.20" data-unit="unidade">Adicionar</button></div></article>
+          <article class="product" data-search="copo brigs brigadeiro doce fino"><img class="product-photo" src="images/finos_b.jpg" alt="Exemplo de Copo brigs — brigadeiro" loading="lazy"><div class="product-top"><h4>Copo brigs</h4><span class="price">R$ 3,20</span></div><p class="desc">Sabor: brigadeiro • preço por unidade.</p><div class="product-bottom"><span></span><button class="small-btn" data-add="Copo brigs — brigadeiro" data-price="3.20" data-unit="unidade">Adicionar</button></div></article>
+          <article class="product" data-search="mini taca ninho uva morango doce fino"><img class="product-photo" src="images/finos_b.jpg" alt="Exemplo de Mini taça — Ninho com uva ou morango" loading="lazy"><div class="product-top"><h4>Mini taça</h4><span class="price">R$ 2,90</span></div><p class="desc">Sabor: Ninho com uva ou morango • preço por unidade.</p><div class="product-bottom"><span></span><button class="small-btn" data-add="Mini taça — Ninho com uva ou morango" data-price="2.90" data-unit="unidade">Adicionar</button></div></article>
+        </div>
+      </section>
+    </div>
+    <div class="box-degust">
+      <img src="images/degustacao.jpg" alt="Caixa degustação do cardápio original" loading="lazy" style="width:100%;max-width:220px;height:160px;object-fit:cover;border-radius:14px">
+      <div><h3>🎁 Caixa degustação</h3><p>Ideal para conhecer nossos doces antes de fazer uma encomenda maior. A caixa é composta por 25 doces: 2 de cada sabor escolhido e 1 aleatório, incluindo variedade de brigadeiros e doces finos.</p></div>
+      <div><div class="price">R$ 55,00</div><button class="small-btn" style="margin-top:10px;background:#fff;color:var(--wine)" data-add="Caixa degustação (25 doces)" data-price="55" data-unit="caixa">Adicionar caixa</button></div>
+    </div>
+  </section>
+  <section id="encomendas">
+    <div class="section-head"><div><div class="eyebrow">Antes de pedir</div><h2>Informações para encomendas</h2><p>Confira os detalhes antes de finalizar seu pedido.</p></div></div>
+    <div class="info-grid">
+      <div class="info"><div class="ico">📆</div><h4>Antecedência</h4><p>Solicite sua encomenda com no mínimo 5 dias de antecedência. Datas sujeitas à disponibilidade.</p></div>
+      <div class="info"><div class="ico">💳</div><h4>Pagamento</h4><p>A confirmação depende do pagamento de 50% ou 100% do total. O PDF informa Pix ou pagamento presencial com cartão na loja física. Cartão de crédito em até 4x.</p></div>
+      <div class="info"><div class="ico">🛍️</div><h4>Entrega ou retirada</h4><p>A modalidade de entrega ou retirada deve ser combinada durante o processo da encomenda.</p></div>
+    </div>
+    <div class="custom-note" style="margin-top:18px;background:#fff;border-color:var(--line)">🤍 Nossos produtos são confeccionados artesanalmente com ingredientes de qualidade. Os brigadeiros têm peso médio de 15 g. As forminhas são brancas ou marrons; se preferir outra tonalidade, informe no momento da encomenda.</div>
+  </section>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div><h2>🍬 Cantinho do Doce</h2><p>Doces artesanais para momentos especiais.</p><p style="margin-top:8px">Aceitamos transferências, Pix e cartão de crédito (até 4x), conforme o cardápio.</p></div>
+    <div><p>Faça sua encomenda pelo WhatsApp</p><p style="font-size:1.2rem;font-weight:850;margin:5px 0 12px">(41) 99942-8724</p><a class="btn" href="https://wa.me/5541999428724" target="_blank" rel="noopener">Conversar no WhatsApp ↗</a></div>
+  </div>
+</footer>
+<button class="cart-fab" id="openCart" aria-label="Abrir carrinho">🛒 Meu pedido <span class="count" id="cartCount">0</span></button>
+<div class="modal-backdrop" id="cartBackdrop" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+  <div class="modal">
+    <div class="modal-head"><h2 id="cartTitle">Seu pedido</h2><button class="close" id="closeCart" aria-label="Fechar">×</button></div>
+    <div id="cartItems" class="cart-list"></div>
+    <div class="total"><span>Total estimado</span><span id="cartTotal">R$ 0,00</span></div>
+    <div class="form-row">
+      <div class="field"><label for="customerName">Seu nome</label><input id="customerName" placeholder="Como podemos te chamar?"></div>
+      <div class="field"><label for="eventDate">Data desejada</label><input id="eventDate" type="date"></div>
+    </div>
+    <div class="form-row">
+      <div class="field"><label for="delivery">Entrega ou retirada</label><select id="delivery"><option>Combinar pelo WhatsApp</option><option>Retirada</option><option>Entrega</option></select></div>
+      <div class="field"><label for="payment">Forma de pagamento</label><select id="payment"><option>Combinar pelo WhatsApp</option><option>Pix</option><option>Cartão de crédito</option><option>Transferência</option></select></div>
+    </div>
+    <div class="field"><label for="notes">Observações (opcional)</label><textarea id="notes" rows="3" placeholder="Sabores, cores das forminhas, personalização ou outras informações"></textarea></div>
+    <button class="btn" id="sendOrder" style="width:100%">Enviar pedido pelo WhatsApp ↗</button>
+    <p style="font-size:.8rem;color:var(--muted);margin-bottom:0">O pedido será enviado para confirmação. A disponibilidade da data, os valores finais e a entrega serão combinados diretamente.</p>
+  </div>
+</div>
+<script>
+const PHONE = "5541999428724";
+const cart = [];
+const money = n => n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+const backdrop = document.getElementById("cartBackdrop");
+function renderCart(){
+  const wrap=document.getElementById("cartItems");
+  const count=cart.reduce((s,x)=>s+x.qty,0);
+  document.getElementById("cartCount").textContent=count;
+  document.getElementById("cartTotal").textContent=money(cart.reduce((s,x)=>s+x.price*x.qty,0));
+  if(!cart.length){wrap.innerHTML='<div class="empty">Seu pedido ainda está vazio.<br>Escolha seus doces no cardápio para começar. 🍬</div>';return}
+  wrap.innerHTML=cart.map((x,i)=>`<div class="cart-row"><div><strong>${x.name}</strong><div style="font-size:.82rem;color:#76666d">${money(x.price)} / ${x.unit}</div></div><div class="qty"><button data-dec="${i}" aria-label="Diminuir">−</button><strong>${x.qty}</strong><button data-inc="${i}" aria-label="Aumentar">+</button></div><button class="remove" data-remove="${i}" aria-label="Remover">Remover</button></div>`).join("");
+}
+// Também disponibiliza a opção de cento (100 unidades) com o preço correto do cardápio.
+const hundredPrices = {tradicional:100, gourmet:165, especial:180, personalizado:180};
+document.querySelectorAll(".category[data-category]").forEach(cat=>{
+ const price=hundredPrices[cat.dataset.category];
+ if(!price)return;
+ cat.querySelectorAll("[data-add]").forEach(btn=>{
+  const name=btn.dataset.add;
+  const hundred=document.createElement("button");
+  hundred.className="small-btn";
+  hundred.style.marginLeft="6px";
+  hundred.textContent="Adicionar 100 un.";
+  hundred.dataset.add=name+" (100 unidades)";
+  hundred.dataset.price=String(price);
+  hundred.dataset.unit="pacote de 100 unidades";
+  btn.parentElement.appendChild(hundred);
+  btn.dataset.unit="pacote de 50 unidades";
+ });
+});
+document.querySelectorAll("[data-add]").forEach(btn=>btn.addEventListener("click",()=>{
+ const name=btn.dataset.add, price=Number(btn.dataset.price), unit=btn.dataset.unit;
+ const found=cart.find(x=>x.name===name);
+ if(found) found.qty++; else cart.push({name,price,unit,qty:1});
+ renderCart();document.getElementById("openCart").animate([{transform:"scale(1)"},{transform:"scale(1.06)"},{transform:"scale(1)"}],{duration:220});
+}));
+document.getElementById("cartItems").addEventListener("click",e=>{
+ const b=e.target.closest("button");if(!b)return;
+ if(b.dataset.inc!==undefined)cart[+b.dataset.inc].qty++;
+ if(b.dataset.dec!==undefined){const i=+b.dataset.dec;cart[i].qty--;if(cart[i].qty<=0)cart.splice(i,1)}
+ if(b.dataset.remove!==undefined)cart.splice(+b.dataset.remove,1);
+ renderCart();
+});
+document.getElementById("openCart").addEventListener("click",()=>{backdrop.classList.add("open");renderCart()});
+document.getElementById("closeCart").addEventListener("click",()=>backdrop.classList.remove("open"));
+backdrop.addEventListener("click",e=>{if(e.target===backdrop)backdrop.classList.remove("open")});
+document.getElementById("sendOrder").addEventListener("click",()=>{
+ if(!cart.length){alert("Adicione pelo menos um produto ao seu pedido.");return}
+ const name=document.getElementById("customerName").value.trim();
+ const date=document.getElementById("eventDate").value;
+ const delivery=document.getElementById("delivery").value;
+ const payment=document.getElementById("payment").value;
+ const notes=document.getElementById("notes").value.trim();
+ const total=cart.reduce((s,x)=>s+x.price*x.qty,0);
+ const lines=["Olá! Gostaria de fazer uma encomenda no Cantinho do Doce. 🍬","",...(name?["Nome: "+name]:[]),...(date?["Data desejada: "+date.split("-").reverse().join("/")]:[]),"Itens:"];
+ cart.forEach(x=>lines.push(`• ${x.name} — ${x.qty} ${x.unit}${x.qty>1?" (cada)":""} — ${money(x.price*x.qty)}`));
+ lines.push("",`Total estimado: ${money(total)}`,`Entrega/retirada: ${delivery}`,`Pagamento: ${payment}`);
+ if(notes)lines.push("Observações: "+notes);
+ lines.push("Sei que a encomenda depende da disponibilidade da data e de confirmação. Aguardo retorno!");
+ window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(lines.join("\n")),"_blank","noopener");
+});
+const search=document.getElementById("search");
+let activeFilter="todos";
+function filterProducts(){
+ const q=search.value.toLocaleLowerCase("pt-BR").trim();
+ document.querySelectorAll(".category").forEach(cat=>{
+  const category=cat.dataset.category;
+  let visible=0;
+  cat.querySelectorAll(".product").forEach(card=>{
+   const matchQ=!q||(card.dataset.search+" "+card.innerText).toLocaleLowerCase("pt-BR").includes(q);
+   const matchCat=activeFilter==="todos"||category===activeFilter;
+   card.style.display=matchQ&&matchCat?"flex":"none";
+   if(matchQ&&matchCat)visible++;
+  });
+  cat.style.display=visible?"block":"none";
+ });
+}
+search.addEventListener("input",filterProducts);
+document.getElementById("filters").addEventListener("click",e=>{
+ const b=e.target.closest("[data-filter]");if(!b)return;
+ activeFilter=b.dataset.filter;
+ document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));
+ filterProducts();
+});
+const today=new Date();today.setDate(today.getDate()+5);
+document.getElementById("eventDate").min=today.toISOString().split("T")[0];
+renderCart();
+</script>
+</body>
+</html>
